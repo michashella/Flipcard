@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Flip Card</title>
+    <style>
+      body {
+        background-color: #ddd;
+      }
+
+      .card {
+        border: 1px solid rgb(135, 134, 134);
+        margin: 50px 100px;
+        padding: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 0 6px 3px rgb(133, 120, 120);
+        font-family: Arial;
+        text-align: center;
+        transform: rotateY(0);
+        transition: 0.7s;
+      }
+      .card:hover {
+        box-shadow: 0 0 8px 5px rgb(133, 120, 120);
+        transform: rotateY(180deg);
+      }
+      .card-header {
+        margin-bottom: 30px;
+      }
+
+      .card-h1 {
+        margin: 0;
+      }
+      .card-h2 {
+        margin: 0;
+      }
+      .card-p {
+        text-align: justify;
+      }
+      .card-img {
+        width: 100%;
+      }
+      .card-a {
+        background-color: #223;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        display: inline-block;
+        border: 3px solid rgb(106, 80, 255);
+        border-radius: 10px;
+        box-shadow: 0 0 6px 3px rgb(33, 30, 81);
+      }
+      .card-a:hover {
+        color: rgb(0, 0, 0);
+        border-color: rgb(6, 0, 128);
+        background-color: rgba(0, 0, 255, 0.215);
+      }
+    </style>
+  </head>
+  <body>
+    <article class="card">
+      <header class="card-header">
+        <h1 class="card-h1">Flip Card</h1>
+        <h2 class="card-h2">An exemple of uding Cards in UX/UI design.</h2>
+      </header>
+      <img
+        class="card-img"
+        src="https://fastly.picsum.photos/id/111/500/300.jpg?hmac=w4aX1tX9TD8noRRcu4EZiASLHGfc-ruj6tcc984TTJo"
+        alt="car">
+      <p class="card-p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quas ex
+        voluptatibus nulla fugit suscipit ipsa consectetur ut, magnam est, dicta
+        odio ratione alias expedita! Voluptatibus quos enim nunquam odit? Dolor
+        voluptas illum, atque asperiores quas at velit iste accusantium?
+      </p>
+      <footer class="class-footer">
+        <a class="card-a" href="#">SEE ORDER EXEMPLE</a>
+      </footer>
+    </article>
+  </body>
+</html>
